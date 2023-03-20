@@ -31,6 +31,7 @@ function App() {
 // import './components/exercise6/styles.css';
 // import './components/exercise7/styles.css';
 // import Todo from './components/exercise9/Todo';
+// import './components/exercise12/styles.css';
 // import './App.css';
 
 // Exercise 1
@@ -199,16 +200,15 @@ function App() {
 
 // // Exercise 11
 // function App() {
-//   const [highlighted, setHighlighted] = React.useState(false);
-  
+//   const [highlight, setHighlight] = React.useState(false);
   
 //   function clickHandler() {
-//       setHighlighted(isHighlighted => !isHighlighted);
+//       setHighlight(isHighlighted => !isHighlighted);
 //   }
   
 //   return (
 //       <div>
-//           <p style={{color:highlighted ? 'red' : 'white'}}>Style me!</p>
+//           <p style={{color: highlight ? 'red' : 'white'}}>Style me!</p>
 //           <button onClick={clickHandler}>Toggle style</button>
 //       </div>
 //   );
@@ -216,16 +216,15 @@ function App() {
 
 // // Exercise 12
 // function App() {
-//   const [highlighted, setHighlighted] = React.useState(false);
-  
+//   const [highlight, setHighlight] = React.useState(false);
   
 //   function clickHandler() {
-//       setHighlighted(isHighlighted => !isHighlighted);
+//       setHighlight(isHighlighted => !isHighlighted);
 //   }
   
 //   return (
 //       <div>
-//           <p className={highlighted ? 'active' : ''}>Style me!</p>
+//           <p className={highlight ? 'active' : ''}>Style me!</p>
 //           <button onClick={clickHandler}>Toggle style</button>
 //       </div>
 //   );
