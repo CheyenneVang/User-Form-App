@@ -6,6 +6,7 @@ import Button from '../UI/Button';
 import ErrorModal from '../UI/ErrorModal';
 
 const AddUser = props => {
+    // useState is a React Hook that adds state to a functional Component. It returns an array with two values [the current state, a function to update it] The Hook takes the initial state value as an argument and returns the updated value whenever the setter function is called
     const [enteredUsername, setEnteredUsername] = useState('');
     const [enteredAge, setEnteredAge] = useState('');
     // there are strings in useState because the starting state will have no input and it will be empty
@@ -34,6 +35,7 @@ const AddUser = props => {
         setEnteredAge('');
     };
 
+    // the setEnteredUsername function will update the value if there is a username inputted
     const usernameChangeHandler = (event) => {
         setEnteredUsername(event.target.value);
     };
@@ -48,6 +50,7 @@ const AddUser = props => {
 
     return (
         <div>
+            {/* Errormodal will only be outputted if there is an error */}
             {error && (
                 <ErrorModal 
                     title={error.title} 

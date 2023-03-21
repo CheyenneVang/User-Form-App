@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AddUser from './components/User/AddUser';
+import './components/User/AddUser.module.css';
 import './App.css';
 import UsersList from'./components/User/UsersList';
 
@@ -110,8 +111,8 @@ function App() {
 // function App() {
 //   const [validMessage, setValidMessage] = useState('Invalid message');
   
-//   function validMessageHandler(event) {
-//       const message = event.target.message;
+// function validMessageHandler(event) {
+//     const message = event.target.value;
       
 //       if (message.trim().length < 3) {
 //       setValidMessage('Invalid message');
@@ -159,7 +160,6 @@ function App() {
 //       </ul>
 //   );
 // }
-
 
 // // Exercise 10
 // function App() {
