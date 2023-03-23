@@ -3,6 +3,7 @@ import AddUser from './components/User/AddUser';
 import './components/User/AddUser.module.css';
 import './App.css';
 import UsersList from'./components/User/UsersList';
+import Header from './components/UI/Header';
 
 function App() {
   const [usersList, setUsersList] = useState([]);
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
     </div>
